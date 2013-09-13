@@ -1,0 +1,161 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font: normal 100%/1.4 Helvetica, sans-serif;
+	background-color: #fff;
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main-content {
+	margin: 1em;
+}
+
+.will-logo {
+	width: 67px;
+	margin: 0 auto;
+	display: block;
+}
+
+h1 {
+	margin-bottom: 0.125em;
+	color: #007684;
+}
+
+.main-content p {
+	margin-top: 0.25em;
+	color: #333;
+}
+
+.main-content a {
+	color: #333;
+}
+
+.portrait {
+	margin-bottom: 5em;
+}
+
+footer {
+	background-color: #007684;
+	color: #fff;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+footer .email {
+	text-align: center;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 0.25em;
+}
+
+footer ul {
+	display: block;
+	margin: 0.25em 0 0;
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+footer p {
+	margin: 0.5em;
+	font-size: 0.75em;
+	text-align: center;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.social-media li {
+	display: inline-block;
+	width: 30px;
+}
+
+.social-media img {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0.25em;
+}
+
+@media only screen and (min-width: 31em) {
+	.will-logo {
+		float: right;
+		display: inline-block;
+	}
+	
+	h1 {
+		float: left;
+		display: inline-block;
+		width: 84%;
+	}
+	
+	.main-content p {
+		float: left;
+		display: inline-block;
+		width: 84%;
+	}
+}
+
+@media only screen and (min-width: 45em) {
+	html {
+		background-image: url(../img/bg.jpg);
+		background-position: right bottom;
+		background-repeat: no-repeat;
+		background-size: 90%;
+		height: 100%;
+	}
+	
+	.portrait {
+		display: none;
+	}
+	
+	h1 {
+		width: 50%;
+	}
+	
+	.main-content p {
+		width: 51%;
+	}
+}
+
+@media only screen and (min-width: 70em) {
+	html {
+		background-size: 85%;
+	}
+}
+
+@media only screen and (min-width: 85em) {
+	html {
+		background-size: 75%;
+	}
+}
+
+@media only screen and (min-width: 115em) {
+	
+	html {
+		background-size: 65%;
+		font-size: 150%;
+	}
+}	
