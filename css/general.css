@@ -2,7 +2,6 @@
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
 
 * {
 	-moz-box-sizing:border-box;
@@ -26,7 +25,7 @@ body {
 	padding: 0;
 }
 
-.main-content {
+.main-wrapper {
 	margin: 1em;
 }
 
@@ -37,21 +36,60 @@ body {
 }
 
 h1 {
-	margin-bottom: 0.125em;
+	margin: 0.5em 0 0.125em;
 	color: #007684;
 }
 
-.main-content p {
+.main-wrapper p {
 	margin-top: 0.25em;
 	color: #333;
 }
 
-.main-content a {
+.main-wrapper a {
 	color: #333;
+}
+
+.btn {
+	display: block;
+	background-color: #007684;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	text-align: center;
+	padding: 0.5em 0.25em 0.5em 0.25em;
+	width: 180px;
+	margin: 0 0 0 0.5em;
+	font-size: 1.25em;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background-color: #448592;
 }
 
 .portrait {
 	margin-bottom: 5em;
+}
+
+.portfolio {
+	width: 100%;
+}
+
+figure {
+	display: block;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+figcaption {
+	text-align: center;
 }
 
 footer {
@@ -111,15 +149,20 @@ footer a:hover {
 		width: 84%;
 	}
 	
-	.main-content p {
+	.main-wrapper p {
 		float: left;
 		display: inline-block;
 		width: 84%;
 	}
+	
+	.portfolio-page .portrait {
+		float: right;
+		max-width: 500px;
+	}
 }
 
 @media only screen and (min-width: 45em) {
-	html {
+	.bg-img {
 		background-image: url(../img/bg.jpg);
 		background-position: right bottom;
 		background-repeat: no-repeat;
@@ -127,7 +170,7 @@ footer a:hover {
 		height: 100%;
 	}
 	
-	.portrait {
+	.landing-page .portrait {
 		display: none;
 	}
 	
@@ -135,27 +178,42 @@ footer a:hover {
 		width: 50%;
 	}
 	
-	.main-content p {
+	.main-wrapper p {
 		width: 51%;
 	}
 }
 
 @media only screen and (min-width: 70em) {
-	html {
+	.bg-img {
 		background-size: 85%;
 	}
 }
 
 @media only screen and (min-width: 85em) {
-	html {
+	.bg-img {
 		background-size: 75%;
 	}
 }
 
 @media only screen and (min-width: 115em) {
 	
-	html {
+	.bg-img {
 		background-size: 65%;
+	}
+	
+	html {
 		font-size: 150%;
 	}
-}	
+}
+
+/*========CLEARFIX========*/
+
+.clearfix:after,
+.clearfix:before {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
