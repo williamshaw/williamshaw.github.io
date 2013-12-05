@@ -30,14 +30,14 @@ body {
 }
 
 .will-logo {
-	width: 67px;
+	width: 120px;
 	margin: 0 auto;
 	display: block;
 }
 
 h1 {
 	margin: 0.5em 0 0.125em;
-	color: #007684;
+	color: #4fbeb4;
 }
 
 .main-wrapper p {
@@ -51,7 +51,7 @@ h1 {
 
 .btn {
 	display: block;
-	background-color: #007684;
+	background-color: #4fbeb4;
 	border-radius: 10px;
 	color: rgb(255, 255, 255);
 	text-decoration: none;
@@ -93,7 +93,7 @@ figcaption {
 }
 
 footer {
-	background-color: #007684;
+	background-color: #4fbeb4;
 	color: #fff;
 	position: fixed;
 	bottom: 0px;
@@ -142,19 +142,19 @@ footer a:hover {
 		float: right;
 		display: inline-block;
 	}
-	
+
 	h1 {
 		float: left;
 		display: inline-block;
-		width: 84%;
+		width: 75%;
 	}
-	
+
 	.main-wrapper p {
 		float: left;
 		display: inline-block;
-		width: 84%;
+		width: 75%;
 	}
-	
+
 	.portfolio-page .portrait {
 		float: right;
 		max-width: 500px;
@@ -169,15 +169,15 @@ footer a:hover {
 		background-size: 90%;
 		height: 100%;
 	}
-	
+
 	.landing-page .portrait {
 		display: none;
 	}
-	
+
 	h1 {
 		width: 50%;
 	}
-	
+
 	.main-wrapper p {
 		width: 51%;
 	}
@@ -196,11 +196,11 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 115em) {
-	
+
 	.bg-img {
 		background-size: 65%;
 	}
-	
+
 	html {
 		font-size: 150%;
 	}
